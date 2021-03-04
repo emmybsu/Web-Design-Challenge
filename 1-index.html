@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Design Homework</title>
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -51,71 +57,58 @@
   </div>
 </nav>
 
-  <div class="container">
-    <!--Normally these medium columns go full wide on small screen sizes-->
-    <div class="row">
-      <div class="col-md-3">
+
+<div class="col-12">
+  <div class="compplot-content">
+    <h2 class="plot-header">Visualizations</h2>
+    <hr>
+
+    <p> The purpose of this project was to display images of how cities are impacted by cloudiness, temperature, humidity, and windspeed with their position to the equator</p>
+    <p> The images below display this information</p>
+    <p> Clicking on the image will take you to another page to provide more information on the data and the image.</p>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-6 col-md-12">
+          <div class="comp-title">vs. Max Temperature</div>
+          <a href="./test3temperature.html">
+            <img src="./Resources/assets/images/temperaturemap.png"  alt="Latitude vs. Temperature" id="comp-image" >
+          </a>
+        </div>
         
-        <h4>Windspeed</h4>
-        <a class="dropdown-item" href="./test3wind.html">Windspeed Plot</a>
-        <img id="Windspeed" src="Resources/assets/images/windmap.png" alt="Wind Map"> <a target="_blank" href="Resources/assets/images/windmap.png"></a>
-      </div>
-      <div class="col-md-3">
-      
-        <h4>Humidity</h4>
-        <a class="dropdown-item" href="./test3humidity.html">Humidity Plot</a>
-        <img id="humidity" src="Resources/assets/images/humiditymap.png" alt="Humidity Map"> <a target="_blank" href="Resources/assets/images/humiditymap.png"></a>
-      </div>
-      <div class="col-md-3">
-      
-        <h4>Temperature</h4>
-        <a class="dropdown-item" href="./test3temperature.html">Temperature Plot</a>
-        <img id="cloudy" src="Resources/assets/images/temperaturemap.png" alt="Temperature Map"> <a target="_blank" href="Resources/assets/images/temperaturemap.png"></a>
-      </div>
-      <div class="col-md-3">
-      
-        <h4>Cloudiness</h4>
-        <a class="dropdown-item" href="./test3cloudy.html">Cloudiness Plot</a>
-        <img src="Resources/assets/images/cloudymap.png" alt="Cloudy Map">
-      </div>
-    </div>
+    
+        <div class="col-lg-6 col-md-12">
+          <div class="comp-title">vs. Humidity</div>
+          <a href="./test3humidity.html">
+          <img src="./Resources/assets/images/humiditymap.png" alt="Latitude vs. Humidity" id="comp-image">
+          </a>
+        </div>
+    
+        <div class="col-lg-6 col-md-12">
+          <div class="comp-title">vs. Cloudiness</div>
+          <a href="./test3cloudy.html">
+          <img src="./Resources/assets/images/cloudymap.png" alt="Latitude vs. Cloudiness" id="comp-image">
+          </a>
+        </div>
 
-    <!--These col-md-3 columns go half wide when on a small screen and full on extra small-->
-    <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <div class="box purple">col-sm-6 col-md-3</div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="box purple">col-sm-6 col-md-3</div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="box purple">col-sm-6 col-md-3</div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="box purple">col-sm-6 col-md-3</div>
-      </div>
-    </div>
-<!--
-    These are full wide on a medium screen, half wide on a small screen, 1/4 wide on an extra small screen-->
-    <div class="row">
-      <div class="col-3 col-sm-6 col-md-12">
-        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-      </div>
-      <div class="col-3 col-sm-6 col-md-12">
-        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-      </div>
-      <div class="col-3 col-sm-6 col-md-12">
-        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-      </div>
-      <div class="col-3 col-sm-6 col-md-12">
-        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-      </div>
-    </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="comp-title">vs. Wind Speed</div>
+          <a href="./3wind.html">
+          <img src="./Resources/assets/images/windmap.png" alt="Latitude vs. Wind Speed" id="comp-image">
+          </a>
+        </div>
+      </div>  
   </div>
+  
+  </div>
+</div>
+</div>  
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
+
 </html>
+
+
